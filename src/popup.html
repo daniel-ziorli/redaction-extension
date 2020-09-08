@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productive Youtube</title>
+    <style>
+        .on {
+            font-size: 100px;
+            padding: 0;
+            margin: 0;
+            color: transparent;
+            transition: all 100ms ease-in-out;
+            -webkit-animation: randomOutline 2s infinite;
+            animation: randomOutline 2s infinite;
+            font-weight: bold;
+        }
+
+        .off {
+            font-size: 100px;
+            padding: 0;
+            margin: 0;
+            color: transparent;
+            -webkit-text-stroke: 5px grey;
+            font-weight: bold;
+        }
+
+        .off:hover{
+            -webkit-text-stroke: 5px white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @keyframes  randomOutline {
+            0% { -webkit-text-stroke: 5px #fffb96;} 
+            20% { -webkit-text-stroke: 5px #ff71ce;} 
+            40% { -webkit-text-stroke: 5px #01cdfe;} 
+            60% { -webkit-text-stroke: 5px #05ffa1;} 
+            80% { -webkit-text-stroke: 5px #b967ff;}
+            100% { -webkit-text-stroke: 5px #fffb96;} 
+        }
+    </style>
+  </head>
+  <body style="background-color: black;">
+    <a href="#" class="on" id="check">REDACT</a>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
